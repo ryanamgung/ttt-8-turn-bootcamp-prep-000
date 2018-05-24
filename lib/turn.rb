@@ -5,6 +5,8 @@ def turn(board)
     if(input.to_i > 9 || input.to_i < 1)
       puts "Please enter a valid input"
       input = gets.strip
+    else
+      break
     end
   end
   index = input_to_index(input)
