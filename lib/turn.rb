@@ -1,7 +1,12 @@
 def turn(board)
   puts "Please enter 1-9:"
-  value = gets.strip
-  index = input_to_index(value)
+  input = gets.strip
+  loop do
+    if(value > 9 || value < 1)
+      puts "Please enter a valid input"
+    end
+  end
+  index = input_to_index(input)
   move(board, index, "X")
   display_board(board)
 end
