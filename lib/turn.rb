@@ -4,6 +4,7 @@ def turn(board)
   loop do
     if(value > 9 || value < 1)
       puts "Please enter a valid input"
+      input = gets.strip
     end
   end
   index = input_to_index(input)
