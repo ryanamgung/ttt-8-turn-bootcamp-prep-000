@@ -2,7 +2,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   loop do
-    if(input > 9 || input < 1)
+    if(input.to_i > 9 || input.to_i < 1)
       puts "Please enter a valid input"
       input = gets.strip
     end
