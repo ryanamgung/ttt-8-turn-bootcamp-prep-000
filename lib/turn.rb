@@ -3,6 +3,7 @@ def turn(board)
   value = gets.strip
   index = value.to_i - 1
   move(board, index, "X")
+  display_board(board)
 end
 
 def move(board, index, token = "X")
