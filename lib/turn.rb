@@ -6,6 +6,10 @@ def turn(board)
   display_board(board)
 end
 
+def input_to_index(input)
+  value.to_i - 1
+end
+
 def move(board, index, token = "X")
   if(valid_move?(board, index))
     board[index] = token
